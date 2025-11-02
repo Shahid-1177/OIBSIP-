@@ -12,8 +12,8 @@ Welcome\! This repository contains a collection of three distinct machine learni
 
 ## **Project 1: Iris Flower Species Classification**
 
-* **Notebook:** iris-classification/task\_1 (1).ipynb  
-* **Dataset:** iris-classification/Iris.csv
+* **Notebook:** iris-classification/iris_flower_prediction.ipynb  
+* **Dataset:** iris-classification/iris.csv
 
 ### **Goal**
 
