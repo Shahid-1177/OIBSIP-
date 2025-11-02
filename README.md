@@ -91,7 +91,7 @@ The **Random Forest Regressor** provided a much better fit for the data than the
 To run these projects on your local machine:
 
 1. **Clone the repository:**  
-   git clone \<https://github.com/Shahid-1177/OIBSIP-\>
+   git clone https://github.com/Shahid-1177/OIBSIP-
 
 2. **Navigate to a project folder:**  
    cd car-price-prediction
