@@ -36,7 +36,7 @@ After cleaning the data, both the **Support Vector Classifier (SVC)** and **Logi
 
 ## **Project 2: Used Car Price Prediction**
 
-* **Notebook:** car-price-prediction/car.ipynb  
+* **Notebook:** car-price-prediction/car_price_prediction.ipynb  
 * **Dataset:** car-price-prediction/car data.csv  
 * **Model Output:** car-price-prediction/car\_price\_model.pkl
 
