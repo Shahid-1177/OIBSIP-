@@ -1,6 +1,12 @@
 # **Machine Learning Projects** 
 
-Welcome\! This repository contains a collection of three distinct machine learning projects. Each project is self-contained in its own folder with its own notebook and dataset.
+# 📊 OASIS INFOBYTE Internship – Data Science Projects
+
+This repository contains the projects I developed during my **Data Science Internship** at **Oasis Infobyte (OIBSIP)**.  
+Each project demonstrates different machine learning concepts, from classification to regression and deployment.
+
+---
+
 
 ## **Table of Contents**
 
