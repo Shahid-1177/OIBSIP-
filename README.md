@@ -72,19 +72,17 @@ To predict product sales based on advertising spend across three different media
 
 1. **Data Loading & Inspection:** Loaded the Advertising.csv dataset and performed standard checks (head, info,describe, isnull, duplicated).  
 2. **Exploratory Data Analysis (EDA):** Visualized the data using histograms, boxplots, scatter plots, and a correlation heatmap, which showed a strong positive correlation between TV spend and Sales.  
-3. **Model Training & Comparison:**  
-   * Trained a LinearRegression model as a baseline.  
-   * Trained a RandomForestRegressor for comparison.  
-4. **Evaluation:** Compared the performance of both models using R² and MSE.
+3. **Model Training :**  
+   * Trained model with RandomForestRegressor . 
 
 ### **Final Model & Results**
 
-The **Random Forest Regressor** provided a much better fit for the data than the simple linear model.
+The **Random Forest Regressor** provided a good fit for the data.
 
 | Model | R² Score (Test Set) | MSE (Test Set) |
 | :---- | :---- | :---- |
 | **Random Forest (Best)** | **0.981** | **0.59** |
-| Linear Regression | 0.899 | 3.17 |
+
 
 ## **How to Use**
 
