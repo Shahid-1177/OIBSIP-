@@ -1,5 +1,3 @@
-# **Machine Learning Projects** 
-
 # 📊 OASIS INFOBYTE Internship – Data Science Projects
 
 This repository contains the projects I developed during my **Data Science Internship** at **Oasis Infobyte (OIBSIP)**.  
