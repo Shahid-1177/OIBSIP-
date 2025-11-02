@@ -91,15 +91,14 @@ The **Random Forest Regressor** provided a much better fit for the data than the
 To run these projects on your local machine:
 
 1. **Clone the repository:**  
-   git clone \<your-repo-url\>
+   git clone \<https://github.com/Shahid-1177/OIBSIP-\>
 
 2. **Navigate to a project folder:**  
    cd car-price-prediction
 
 3. **Install requirements:**  
    pip install \-r requirements.txt
-
-   *(Each project folder has its own requirements.txt).*  
+ 
 4. **Launch Jupyter:**  
    jupyter notebook
 
