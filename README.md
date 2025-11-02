@@ -3,7 +3,6 @@
 This repository contains the projects I developed during my **Data Science Internship** at **Oasis Infobyte (OIBSIP)**.  
 Each project demonstrates different machine learning concepts, from classification to regression and deployment.
 
----
 
 
 ## **Table of Contents**
