@@ -32,7 +32,7 @@ To classify Iris flowers into one of three species (Iris-setosa, Iris-versicolor
 4. **Baseline Model Training:** Split the data (70/30) and trained five baseline classification models.  
 5. **Data Cleaning:** Identified and removed four outliers from the SepalWidthCm feature using the Interquartile Range (IQR) method.  
 6. **Final Model Training:** Re-split the cleaned data and re-trained the top-performing models (SVC, Logistic Regression, KNN).
-7. The project is supported by a simple Streamlit application (app.py) for live prediction based on user-input marketing budgets.
+7. simple Streamlit application (app.py) for Iris Flower classification
 
 ### **Final Model & Results**
 
@@ -56,7 +56,7 @@ To predict the selling price of used cars using a regression model based on thei
 4. **Model Training:** Trained a RandomForestRegressor within an sklearn.pipeline.Pipeline.  
 5. **Evaluation & Visualization:** Evaluated the model using R² (0.96) and RMSE (0.959). Plotted feature importances, which identified Present\_Price as the strongest predictor.  
 6. **Model Saving:** The final trained model was saved to car\_price\_model.pkl using joblib.
-7. The project is supported by a simple Streamlit application (app.py) for live prediction based on user-input marketing budgets.
+7. Streamlit application (app.py) for live prediction of car price by user input.
 
 ### **Final Model & Results**
 
@@ -80,7 +80,7 @@ To predict product sales based on advertising spend across three different media
 3. **Model Training :**  
    * Trained model with RandomForestRegressor .
   
-4.The project is supported by a simple Streamlit application (app.py) for live prediction based on user-input marketing budgets.
+4. simple Streamlit application (app.py) for live prediction based on user-input marketing budgets.
 
 ### **Final Model & Results**
 
