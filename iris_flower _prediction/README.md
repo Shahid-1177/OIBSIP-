@@ -34,7 +34,7 @@ The objective is to build a model that accurately predicts the species of an iri
    * The cleaned data was re-split, and the top-performing models were re-trained.
   
 6. **App for hosting our model**
-   *simple Streamlit application (app.py) for Iris Flower classification.
+   * Simple Streamlit application (app.py) for Iris Flower classification.
 
 
 ## **Final Model & Results**
