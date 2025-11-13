@@ -32,6 +32,7 @@ To classify Iris flowers into one of three species (Iris-setosa, Iris-versicolor
 4. **Baseline Model Training:** Split the data (70/30) and trained five baseline classification models.  
 5. **Data Cleaning:** Identified and removed four outliers from the SepalWidthCm feature using the Interquartile Range (IQR) method.  
 6. **Final Model Training:** Re-split the cleaned data and re-trained the top-performing models (SVC, Logistic Regression, KNN).
+7. The project is supported by a simple Streamlit application (app.py) for live prediction based on user-input marketing budgets.
 
 ### **Final Model & Results**
 
@@ -55,6 +56,7 @@ To predict the selling price of used cars using a regression model based on thei
 4. **Model Training:** Trained a RandomForestRegressor within an sklearn.pipeline.Pipeline.  
 5. **Evaluation & Visualization:** Evaluated the model using R² (0.96) and RMSE (0.959). Plotted feature importances, which identified Present\_Price as the strongest predictor.  
 6. **Model Saving:** The final trained model was saved to car\_price\_model.pkl using joblib.
+7. The project is supported by a simple Streamlit application (app.py) for live prediction based on user-input marketing budgets.
 
 ### **Final Model & Results**
 
@@ -76,7 +78,9 @@ To predict product sales based on advertising spend across three different media
 1. **Data Loading & Inspection:** Loaded the Advertising.csv dataset and performed standard checks (head, info,describe, isnull, duplicated).  
 2. **Exploratory Data Analysis (EDA):** Visualized the data using histograms, boxplots, scatter plots, and a correlation heatmap, which showed a strong positive correlation between TV spend and Sales.  
 3. **Model Training :**  
-   * Trained model with RandomForestRegressor . 
+   * Trained model with RandomForestRegressor .
+  
+4.The project is supported by a simple Streamlit application (app.py) for live prediction based on user-input marketing budgets.
 
 ### **Final Model & Results**
 
@@ -85,6 +89,7 @@ The **Random Forest Regressor** provided a good fit for the data.
 | Model | R² Score (Test Set) | MSE (Test Set) |
 | :---- | :---- | :---- |
 | **Random Forest (Best)** | **0.981** | **0.59** |
+
 
 
 ## **How to Use**
@@ -115,3 +120,4 @@ To run these projects on your local machine:
 * Matplotlib  
 * Seaborn  
 * Joblib
+* Streamlit for web application development.
