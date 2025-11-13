@@ -23,6 +23,8 @@ The goal is to build a model that accurately predicts Sales based on the adverti
    * The trained model is used to make predictions on the test set.  
    * Performance is evaluated using R-squared (R²) and Mean Squared Error (MSE).  
    * A scatter plot of actual vs. predicted sales is created, showing a strong positive fit.
+   * The project includes a basic Streamlit app for interactive prediction demonstration.
+   * We have a simple Streamlit application (app.py) for live prediction based on user-input marketing budgets.
 
 ## **Final Model & Results**
 
