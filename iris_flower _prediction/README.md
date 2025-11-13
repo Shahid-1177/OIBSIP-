@@ -13,27 +13,30 @@ The objective is to build a model that accurately predicts the species of an iri
 
 ## **Workflow**
 
-1. **Data Loading & Inspection:** The iris.csv file is loaded into a Pandas DataFrame. Initial analysis is performed (head, info, describe, value\_counts) to understand the data's structure, check for missing values, and see the distribution of the three species.  
-2. **Exploratory Data Analysis (EDA):**  
+1. **Data Loading & Inspection:** The iris.csv file is loaded into a Pandas DataFrame. Initial analysis is performed (head, info, describe, value\_counts) to understand the data's structure, check for missing values, and see the distribution of the three species.
+2.  **Exploratory Data Analysis (EDA):**  
    * Histograms and boxplots were created to understand feature distributions and identify outliers.  
    * Scatter plots and a sns.pairplot were used to visualize the relationships between features, colored by species. This revealed that *Iris-setosa* is highly separable from the other two species.  
-   * A correlation heatmap was plotted to quantify the relationships between features.  
+   * A correlation heatmap was plotted to quantify the relationships between features. 
 3. **Data Preprocessing:**  
    * The Id column was dropped.  
-   * The categorical Species target variable was converted into numerical labels (0, 1, 2\) using sklearn.preprocessing.LabelEncoder.  
-4. **Baseline Model Training:**  
+   * The categorical Species target variable was converted into numerical labels (0, 1, 2\) using sklearn.preprocessing.LabelEncoder.
+4.   **Baseline Model Training:**  
    * The data was split into a 70% training set and a 30% testing set.  
    * Five different classification models were trained and evaluated on their accuracy:  
      * Logistic Regression (93.3% accuracy)  
      * K-Nearest Neighbors (KNN) (93.3% accuracy)  
      * Decision Tree Classifier (91.1% accuracy)  
      * Random Forest Classifier (91.1% accuracy)  
-     * Support Vector Classifier (SVC) (95.6% accuracy)  
-5. **Data Cleaning & Final Modeling:**  
+     * Support Vector Classifier (SVC) (95.6% accuracy)
+5.   **Data Cleaning & Final Modeling:**  
    * Based on the boxplots from the EDA, four outliers were identified and removed from the SepalWidthCm feature using the 1.5 \* IQR (Interquartile Range) rule.  
    * The cleaned data was re-split, and the top-performing models were re-trained.
-6.**App for hosting our model**
+  
+6. **App for hosting our model**
    *simple Streamlit application (app.py) for Iris Flower classification.
+
+
 ## **Final Model & Results**
 
 Removing the outliers significantly improved model performance. The final models achieved the following on the test set:
