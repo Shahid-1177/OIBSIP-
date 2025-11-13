@@ -32,7 +32,8 @@ The objective is to build a model that accurately predicts the species of an iri
 5. **Data Cleaning & Final Modeling:**  
    * Based on the boxplots from the EDA, four outliers were identified and removed from the SepalWidthCm feature using the 1.5 \* IQR (Interquartile Range) rule.  
    * The cleaned data was re-split, and the top-performing models were re-trained.
-
+6.**App for hosting our model**
+   *simple Streamlit application (app.py) for Iris Flower classification.
 ## **Final Model & Results**
 
 Removing the outliers significantly improved model performance. The final models achieved the following on the test set:
