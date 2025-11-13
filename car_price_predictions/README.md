@@ -26,6 +26,7 @@ To build a regression model that accurately estimates the Selling\_Price of a us
    * A scatter plot is created to compare actual vs. predicted selling prices.  
    * Feature importances are extracted from the trained Random Forest model and visualized.  
    * The final trained model pipeline is saved to disk as car\_price\_model.pkl using joblib.
+   * The project includes a basic Streamlit app for interactive prediction demonstration.
 
 ## **Final Model & Results**
 
@@ -34,6 +35,61 @@ To build a regression model that accurately estimates the Selling\_Price of a us
 * **RMSE:** **0.959**
 
 The feature importance plot shows that Present\_Price is by far the most significant predictor of a car's selling price, followed by Car\_Age and Driven\_kms.
+
+
+## 💾 Model Saving
+
+The trained model was serialized using **Joblib**:
+
+```python
+import joblib, os
+os.makedirs("artifacts", exist_ok=True)
+joblib.dump(model, "artifacts/best_rf_model.joblib")
+```
+
+This allows reloading without retraining.
+
+---
+## 🌐 Deployment using Streamlit & Ngrok
+
+### app.py
+```python
+import streamlit as st
+import joblib
+import numpy as np
+
+model = joblib.load('artifacts/best_rf_model.joblib')
+
+st.title("🚗 Car Price Prediction App")
+st.write("Enter car details to estimate selling price.")
+
+present_price = st.number_input("Present Price (in lakhs)", 0.0)
+kms_driven = st.number_input("Kms Driven", 0)
+fuel_type = st.selectbox("Fuel Type", ["Petrol", "Diesel", "CNG"])
+seller_type = st.selectbox("Seller Type", ["Dealer", "Individual"])
+transmission = st.selectbox("Transmission", ["Manual", "Automatic"])
+car_age = st.slider("Car Age (in years)", 0, 20)
+
+if st.button("Predict Price"):
+    input_data = np.array([[present_price, kms_driven, fuel_type, seller_type, transmission, car_age]])
+    prediction = model.predict(input_data)
+    st.success(f"Estimated Selling Price: ₹{prediction[0]:.2f} lakhs")
+```
+
+### Ngrok Tunnel Setup
+```python
+from pyngrok import ngrok
+!ngrok authtoken "YOUR_NGROK_AUTH_TOKEN"
+
+public_url = ngrok.connect(8501)
+print("Public URL:", public_url)
+!streamlit run app.py --server.port 8501
+```
+
+Access your app using the printed **public ngrok URL**.
+
+---
+
 
 ## **How to Run**
 
